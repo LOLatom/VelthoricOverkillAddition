@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/LOLatom/VelthoricOverkillAddition/edit/master/assets/velthoric_icon_rounded_corners.png" alt="Velthoric Icon" width="128" height="128">
+  <img src="https://raw.githubusercontent.com/LOLatom/VelthoricOverkillAddition/blob/master/assets/velthoric_icon_rounded_corners.png" alt="Velthoric Icon" width="128" height="128">
 </p>
 
 <div align="center">
