@@ -3,7 +3,7 @@
 </p>
 
 <div align="center">
-  <h1>Velthoric Physics Mod</h1>
+  <h1>Velthoric For Overkill</h1>
   <p><i>Redefining physics in the world of Minecraft.</i></p>
 </div>
 
