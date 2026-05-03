@@ -109,6 +109,9 @@ endif()
 # Define vxnative Library
 add_library(vxnative SHARED
     src/Velthoric/PhysicsSync/BatchPhysicsSync.cpp
+    src/Velthoric/Terrain/TerrainGenerator.cpp
+    src/Velthoric/Terrain/Interaction/TerrainInteraction.cpp
+    src/Velthoric/Terrain/Contact/TerrainContactListener.cpp
 )
 
 target_include_directories(vxnative PRIVATE 
@@ -126,6 +129,12 @@ target_compile_definitions(vxnative PRIVATE
 )
 
 target_link_libraries(vxnative PRIVATE joltjni ${JNI_LIBRARIES})
+
+if(MSVC)
+    target_compile_options(vxnative PRIVATE /GR- /EHs- /W4)
+else()
+    target_compile_options(vxnative PRIVATE -fno-rtti -fno-exceptions -Wall -Wextra)
+endif()
 
 # Output naming and static runtime linking
 set_target_properties(vxnative PROPERTIES 
